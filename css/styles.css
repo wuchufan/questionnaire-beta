@@ -1,0 +1,53 @@
+body{
+  /* text-align: center */
+}
+td{
+  vertical-align: baseline;
+}
+
+label{
+  margin: 10px;
+}
+
+table{
+  text-align: center;
+  width:25%;
+  border-collapse: collapse;
+  /* border:1px solid #ddd; */
+}
+th, td{
+  height: 20px;
+  /* width: 100%; */
+  vertical-align: middle;
+  border: 1px solid #ddd;
+}
+.total-score{
+
+  position:sticky;
+  display:inline-block;
+  top:0;
+  left:100%;
+  background-color: yellow;
+  height:300px;
+  width:300px;
+}
+.section-a, .section-b, .section-c, .section-d{
+  position:relative;
+  bottom: 300px;
+
+
+}
+/* .container{
+  position:relative;
+  bottom:300px;
+
+
+} */
+
+.mix-form{
+  margin-bottom: 10px;
+
+}
+.marriage{
+  margin-bottom: 2em;
+}
