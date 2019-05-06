@@ -8,21 +8,18 @@
 </head>
 
 <body>
+  <div class="body-container">
+
+
   <div class="marriage">
     <h2>婚姻 Marriage Information</h2>
-    <label for="">Married<input type="radio" name="" value=""></label>
-    <label for="">Singled<input type="radio" name="" value=""></label>
+    <label for="">Married<input type="radio" name="ques-s01" value="married"></label>
+    <label for="">Singled<input type="radio" name="ques-s01" value="singled"></label>
   </div>
 
   <hr>
   <div class="container">
-    <div class="total-score">
-      <div class="inner-total-score">
-        <label for="">总分</label>
 
-
-      </div>
-    </div>
 
     <div class="section-a">
 
@@ -102,9 +99,12 @@
 
     <div class="section-b">
       <h2>Section B. 配偶加分</h2>
+      <form>
       <div class="spouse education">
 
-        <form class="spouse-education">
+
+
+
           <label for="q2a">配偶教育加分:</label>
           <select id="q2a" class="" name="">
             <option value="">高中</option>
@@ -117,7 +117,7 @@
           </select>
       </div>
       <div class="spouse canada-work-experience">
-        <form>
+
           <label for="q2b">配偶加拿大工作经验</label>
           <select id="q2b" class="" name="">
             <option value="">1年</option>
@@ -127,22 +127,23 @@
             <option value="">5年或以上</option>
 
           </select>
-        </form>
+
 
       </div>
       <div class="spouse language">
         <h3>配偶第一语言加分:</h3>
-        <form class="langueage first-language">
+
           <label>听:<input type="text" name="" value=""></label><br>
           <label>说:<input type="text" name="" value=""></label><br>
           <label>读:<input type="text" name="" value=""></label><br>
           <label>写:<input type="text" name="" value=""></label><br>
 
-        </form>
+
 
       </div>
-      <hr>
 
+    </form>
+    <hr>
     </div>
 
     <div class="section-c">
@@ -200,7 +201,16 @@
 
 
   </div>
+</div>
+  <div class="total-score">
+    <div>
+      <label>总分:</label>
+    </div>
+
+  </div>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="index.js" charset="utf-8"></script>
 </body>
 
 </html>
