@@ -16,9 +16,9 @@ label{
   display: inline-block;
   margin: 10px;
 }
-form{
+.form-div{
   text-align: left;
-  margin-left: 45%;
+  margin-left: 40%;
 
 
 
@@ -52,8 +52,10 @@ th, td{
 
   position:sticky;
   display:inline-block;
-  bottom: 300px;
-  background-color: yellow;
+  bottom: 20%;
+  color: white;
+  background-color: #103c42;
+
   height: 300px;
   width: 300px;
   text-align: left;
