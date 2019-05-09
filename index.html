@@ -13,8 +13,9 @@
 
   <div class="marriage">
     <h2>婚姻 Marriage Information</h2>
-    <label for="">Married<input type="radio" name="ques-s01" value="married" ></label>
     <label for="">Singled<input type="radio" name="ques-s01" value="singled" checked></label>
+    <label for="">Married<input type="radio" name="ques-s01" value="married" ></label>
+
   </div>
 
   <hr>
@@ -23,7 +24,7 @@
 
     <div class="section-a">
 
-      <h2>Section A</h2>
+      <h2>核心/人力资本因素 Core / human capital factors</h2>
       <div>
 
 
@@ -40,14 +41,14 @@
 
             <label for="q1b">教育经历:</label>
             <select id="q1b">
-              <option value="7">无</option>
-              <option value="0">高中</option>
-              <option value="1">一年高等教育</option>
-              <option value="2">二年高等教育</option>
-              <option value="3">三年以上高等教育</option>
-              <option value="4">两个以上高等教育且其中一个为三年制以上</option>
-              <option value="5">硕士 </option>
-              <option value="6">博士</option>
+              <option value="0">无</option>
+              <option value="1">高中</option>
+              <option value="2">一年高等教育</option>
+              <option value="3">二年高等教育</option>
+              <option value="4">三年以上高等教育</option>
+              <option value="5">两个以上高等教育且其中一个为三年制以上</option>
+              <option value="6">硕士 </option>
+              <option value="7">博士</option>
             </select>
 
         </div>
@@ -211,26 +212,26 @@
 
           <label for="q2a">配偶教育加分:</label>
           <select id="q2a" class="" name="">
-            <option value="">无</option>
-            <option value="">高中</option>
-            <option value="">一年高等教育</option>
-            <option value="">二年高等教育</option>
-            <option value="">三年以上高等教育</option>
-            <option value="">两个以上高等教育且其中一个为三年制以上</option>
-            <option value="">硕士 </option>
-            <option value="">博士</option>
+            <option value="0">无</option>
+            <option value="1">高中</option>
+            <option value="2">一年高等教育</option>
+            <option value="3">二年高等教育</option>
+            <option value="4">三年以上高等教育</option>
+            <option value="5">两个以上高等教育且其中一个为三年制以上</option>
+            <option value="6">硕士 </option>
+            <option value="7">博士</option>
           </select>
       </div>
       <div class="spouse canada-work-experience">
 
           <label for="q2b">配偶加拿大工作经验</label>
           <select id="q2b" class="" name="">
-            <option value="">无</option>
-            <option value="">1年</option>
-            <option value="">2年</option>
-            <option value="">3年</option>
-            <option value="">4年</option>
-            <option value="">5年或以上</option>
+            <option value="0">无</option>
+            <option value="1">1年</option>
+            <option value="2">2年</option>
+            <option value="3">3年</option>
+            <option value="4">4年</option>
+            <option value="5">5年或以上</option>
 
           </select>
 
@@ -239,10 +240,51 @@
       <div class="spouse language">
         <h3>配偶第一语言加分:</h3>
 
-          <label>听:<input type="text" name="" value=""></label><br>
-          <label>说:<input type="text" name="" value=""></label><br>
-          <label>读:<input type="text" name="" value=""></label><br>
-          <label>写:<input type="text" name="" value=""></label><br>
+          <label>听: <select id="q2langli" class="qspolang" name="">
+            <option value="0">请选择语言分数</option>
+            <option value="1">5</option>
+            <option value="2">5.5</option>
+            <option value="3">6</option>
+            <option value="4">6.5</option>
+            <option value="5">7</option>
+            <option value="6">7.5</option>
+            <option value="7">8</option>
+            <option value="8">8.5或以上</option>
+
+          </select> </label><br>
+          <label>说: <select id="q2langsp" class="qspolang" name="">
+            <option value="0">请选择语言分数</option>
+            <option value="1">5</option>
+            <option value="2">5.5</option>
+            <option value="3">6</option>
+            <option value="4">6.5</option>
+            <option value="5">7</option>
+            <option value="6">7.5或以上</option>
+
+          </select> </label><br>
+          <label>读: <select id="q2langre" class="qspolang" name="">
+            <option value="0">请选择语言分数</option>
+            <option value="1">4</option>
+            <option value="2">4.5</option>
+            <option value="3">5</option>
+            <option value="4">5.5</option>
+            <option value="5">6</option>
+            <option value="6">6.5</option>
+            <option value="7">7</option>
+            <option value="8">7.5</option>
+            <option value="9">8或以上</option>
+
+          </select> </label><br>
+          <label>写: <select id="q2langwr" class="qspolang" name="">
+            <option value="0">请选择语言分数</option>
+            <option value="1">5</option>
+            <option value="2">5.5</option>
+            <option value="3">6</option>
+            <option value="4">6.5</option>
+            <option value="5">7</option>
+            <option value="6">7.5或以上</option>
+
+          </select> </label><br>
 
 
 
@@ -253,10 +295,10 @@
     </div>
 
     <div class="section-c">
-      <h2>Section C. 加拿大技术移民评分标准，最高分数100分，对加拿大工作，学历和海外学历认证</h2>
-      <h6>满分100</h6>
+      <h2>交叉项（满分100）</h2>
+
       <div class="mix">
-        <div class="form-div" class = "mix-div class="form-div"">
+        <div class="form-div mix-div">
           <label>海外工作经验:
             <!-- <input type="number" id ="ques-sc1" name="" value="" placeholder="请输入海外工作年数"> -->
             <select id="ques-sc1" class="" name="">
@@ -271,21 +313,21 @@
           <th colspan="2"><strong>学历 x 加拿大工作经验 x 语言（最高50分)</strong></th>
           <tr>
             <td>学历奖励分语言分:</td>
-            <td>0</td>
+            <td><span id="c-section1">0</span></td>
           </tr>
           <tr>
             <td>学历奖励分，工作分:</td>
-            <td>0</td>
+            <td><span id="c-section2">0</span></td>
           </tr>
           <th colspan="2"><strong>加拿大工作经验 x 海外工作经验 x 语言 (最高50分)</strong></th>
           <tr>
             <td>海外工作经历，语言分:</td>
-            <td>0</td>
+            <td><span id="c-section3">0</span></td>
 
           </tr>
           <tr>
             <td>海外工作分，有加拿大工作:</td>
-            <td>0</td>
+            <td><span id="c-section4">0</span></td>
 
           </tr>
           <th colspan="2">其他</th>
@@ -304,11 +346,23 @@
       <div class="bonus">
         <h3>附加分项目:</h3>
         <div class="form-div">
-          <label><input type="checkbox" name="" value="">加拿大完成1或2年高等教育</label><br>
-          <label><input type="checkbox" name="" value="">加拿大完成3年以上高等教育</label><br>
-          <label><input type="checkbox" name="" value="">Job offer-NOC 00</label><br>
-          <label><input type="checkbox" name="" value="">Job offer-NOC 0, A, B</label><br>
-          <label><input type="checkbox" name="" value="">省提名</label>
+          <label>加拿大学历: <select id="bonus-edu">
+            <option value="0">无</option>
+            <option value="1">加拿大完成1或2年高等教育</option>
+            <option value="2">加拿大完成3年以上高等教育</option>
+          </select>
+        </label><br>
+        <label>雇主担保: <select id="bonus-offer">
+          <option value="0">无</option>
+          <option value="1">Job offer-NOC 00</option>
+          <option value="2">Job offer-NOC 0, A, B</option>
+        </select>
+      </label> <br>
+      <label>省提名: <select id="bonus-prov">
+        <option value="0">我没有省提名</option>
+        <option value="1">我有省提名</option>
+      </select> </label>
+
         </div>
 
 
@@ -330,13 +384,13 @@
       第二语言成绩分: <span id="lang2-score-result">0</span> </p>
     </div>
     <div>
-      <p>Section B: <span id="section-a-result">0</span> </p>
+      <p class="section-b">Section B: <span id="section-b-result">0</span> </p>
     </div>
     <div>
-      <p>Section C: <span id="section-a-result">0</span> </p>
+      <p>Section C: <span id="section-c-result">0</span> </p>
     </div>
     <div>
-      <p>Section D: <span id="section-a-result">0</span> </p>
+      <p>Section D: <span id="section-d-result">0</span> </p>
     </div>
     <div>
       <p>总分: <span id="final-result">0</span> </p>
