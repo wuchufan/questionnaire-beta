@@ -33,7 +33,13 @@ hr{
 
   margin-bottom: 0;
 }
-th, td{
+th{
+  height: 40px;
+  color: white;
+  background-color: grey;
+}
+
+td{
   height: 30px;
   text-align: center;
   width: 400px;
