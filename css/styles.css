@@ -54,6 +54,9 @@ td{
   width: 100px;
   background-color: grey;
 }
+.short-title{
+  padding-right: 100px;
+}
 .total-score{
 
   position:sticky;

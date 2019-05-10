@@ -135,7 +135,7 @@
 
             </div>
           </div>
-          <div class="language second-language">
+          <!-- <div class="language second-language">
             <h3>第二语言听说读写语言成绩:</h3>
             <div class="form-div" class="langueage first-language">
               <label>听:</label>
@@ -192,7 +192,7 @@
 
               </select><br>
 
-            </div>
+            </div> -->
           </div>
 
         </div>
@@ -203,7 +203,7 @@
     </div>
 
     <div class="section-b">
-      <h2>Section B. 配偶加分</h2>
+      <h2 class="short-title">配偶加分</h2>
       <div class="form-div">
       <div class="spouse education">
 
@@ -295,7 +295,7 @@
     </div>
 
     <div class="section-c">
-      <h2>交叉项（满分100）</h2>
+      <h2 class="short-title">其他附加分</h2>
 
       <div class="mix">
         <div class="form-div mix-div">
@@ -307,7 +307,15 @@
               <option value="2">3年及以上海外工作经验</option>
 
             </select>
+          </label><br>
+          <label>技工职业证书:
+            <select id="ques-sc2">
+              <option value="0">我没有技工职业证书</option>
+              <option value="1">我有技工职业证书</option>
+
+            </select>
           </label>
+
         </div>
         <table>
           <th colspan="2"><strong>学历 x 加拿大工作经验 x 语言（最高50分)</strong></th>
@@ -333,18 +341,18 @@
           <th colspan="2">其他</th>
           <tr>
             <td>技工职业证书:</td>
-            <td>0</td>
+            <td><span id="c-section5">0</span></td>
           </tr>
         </table>
       </div>
 
-      <hr>
+      <!-- <hr> -->
     </div>
 
     <div class="section-d">
-      <h2>Section D. 其他附加分</h2>
-      <div class="bonus">
-        <h3>附加分项目:</h3>
+      <!-- <h2>Section D. 其他附加分</h2> -->
+      <div class="bonus short-title">
+        <h3 >附加分项目:</h3>
         <div class="form-div">
           <label>加拿大学历: <select id="bonus-edu">
             <option value="0">无</option>
@@ -376,21 +384,21 @@
 </div>
   <div class="total-score">
     <div>
-      <p>Section A: <span id="section-a-result">0</span><br>
+      <p>核心/人力资本因素总分: <span id="section-a-result">0</span><br>
       年龄分: <span id="age-score-result">0</span><br>
       教育分:<span id="edu-score-result">0</span><br>
       加拿大工作经验分:<span id= "cworkexp-score-result">0</span><br>
       第一语言成绩分:<span id="lang1-score-result">0</span><br>
-      第二语言成绩分: <span id="lang2-score-result">0</span> </p>
+      <!-- 第二语言成绩分: <span id="lang2-score-result">0</span> </p> -->
     </div>
     <div>
-      <p class="section-b">Section B: <span id="section-b-result">0</span> </p>
+      <p class="section-b">配偶加分: <span id="section-b-result">0</span> </p>
     </div>
     <div>
-      <p>Section C: <span id="section-c-result">0</span> </p>
+      <p>交叉项加分(满分100): <span id="section-c-result">0</span> </p>
     </div>
     <div>
-      <p>Section D: <span id="section-d-result">0</span> </p>
+      <p>附加分项目: <span id="section-d-result">0</span> </p>
     </div>
     <div>
       <p>总分: <span id="final-result">0</span> </p>

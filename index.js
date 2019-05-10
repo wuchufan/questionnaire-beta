@@ -227,6 +227,10 @@ $("#ques-sc1").change(function(){
   updateScores();
 });
 
+$("#ques-sc2").change(function(){
+  updateScores();
+});
+
 
 //Section D
 $("#bonus-edu").change(function(){
@@ -400,11 +404,12 @@ function updateMixedScores(){
   var optionValueEdu = $("#q1b").val();
   var optionValueFgnWorkExp = $("#ques-sc1").val();
   var optionValueCWorkExp = $("#q1e").val();
+  var optionValueSkillCre = $("#ques-sc2").val();
   var optionValueLi = $("#qlangli1").val();
   var optionValueSp = $("#qlangsp1").val();
   var optionValueRe = $("#qlangre1").val();
   var optionValueWr = $("#qlangwr1").val();
-  var sectionScore = [[0,0],[0,0]];
+  var sectionScore = [[0,0],[0,0],[0]];
   var sectionTotalScore = 0;
   //first column:
   // console.log("first column: " +optionValueLi, optionValueSp, optionValueRe, optionValueWr, optionValueEdu);
@@ -478,10 +483,25 @@ function updateMixedScores(){
     }
   }
   $("#c-section4").text(sectionScore[1][1]);
+  //Skill-Cre column:
+  if (optionValueLi >= 2 && optionValueSp >= 2 && optionValueRe >= 2 && optionValueWr >= 3 && optionValueSkillCre == 1){
+    if (optionValueLi >= 4 && optionValueSp >= 4 && optionValueRe >= 6 && optionValueWr >= 5){
+      sectionScore[2][0]=50;
+    } else if ( optionValueLi >= 4 || optionValueSp >= 4 || optionValueRe >= 6 || optionValueWr >= 5){
+      sectionScore[2][0]=25;
+    }
+  }
+  $("#c-section5").text(sectionScore[2]);
+  // console.log(sectionScore[2])
+  // console.log(optionValueLi , optionValueSp , optionValueRe , optionValueWr);
+
   //update total scores:
-  var sectionCalculatedScore =[0,0];
+  var sectionCalculatedScore =[0,0,0];
   for (i= 0; i < sectionScore.length;i++){
+    // console.log("i is: "+i)
+    // console.log("section[i].length: "+sectionScore[i].length);
     for (j=0; j< sectionScore[i].length;j++){
+      // console.log("j is :"+j)
       sectionCalculatedScore[i] +=sectionScore[i][j];
     }
     if (sectionCalculatedScore[i] > 50){
@@ -490,9 +510,14 @@ function updateMixedScores(){
 
     sectionTotalScore += sectionCalculatedScore[i];
   }
-  // console.log("sectionTotalScore:" + sectionTotalScore);
+  if (sectionTotalScore > 100){
+    sectionTotalScore = 100;
+  }
+  console.log("sectionTotalScore:" + sectionTotalScore);
   return sectionTotalScore;
 }
+
+
 
 
 
